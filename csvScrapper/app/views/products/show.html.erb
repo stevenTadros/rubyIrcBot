@@ -1,0 +1,76 @@
+<p id="notice"><%= notice %></p>
+<!-- Page Content -->
+<div class="row">
+  <!-- Product Content Column -->
+  <div class="col-lg-8">
+    <!-- Title -->
+    <h1><%= @product.NOM_PRODUIT %></h1>
+
+    <p class="lead"><strong>Ean: </strong><%= @product.EAN %></p>
+
+    <hr>
+
+    <p><strong>Categories: </strong><%= @product.CATEGORIES %></p>
+
+    <hr>
+    <!-- Preview Image -->
+    <img class="img-responsive" src="<%= @product.IMAGE1 %>" alt="">
+    <img class="img-responsive" src="<%= @product.IMAGE2 %>" alt="">
+    <img class="img-responsive" src="<%= @product.IMAGE3 %>" alt="">
+    <img class="img-responsive" src="<%= @product.IMAGE4 %>" alt="">
+
+    <hr>
+
+    <p class="lead"><strong>Marque: </strong><%= @product.MARQUE %></p>
+    <p class="lead"><strong>Ref fabricant: </strong><%= @product.REF_FABRICANT %></p>
+    <p class="lead"><strong>DESCRIPTION: </strong><%= @product.DESCRIPTION %></p>
+
+    <hr>
+
+    <div class="well">
+      <h4>Image Link</h4>
+      <p class="lead"><strong>IMAGE1: </strong><%= @product.IMAGE1 %></p>
+      <p class="lead"><strong>IMAGE2: </strong><%= @product.IMAGE2 %></p>
+      <p class="lead"><strong>IMAGE3: </strong><%= @product.IMAGE3 %></p>
+      <p class="lead"><strong>IMAGE4: </strong><%= @product.IMAGE4 %></p>         
+    </div>
+    <hr>
+    <div>
+      <%= link_to 'Edit', edit_product_path(@product) %> |
+      <%= link_to 'Back', products_path %>
+    </div>
+  </div>
+  <!-- Product Sidebar Column -->
+  <div class="col-md-4">
+    <div class="well">
+      <h4>Infos</h4>
+      <div class="row">
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><strong>PRIX ACHAT HT: </strong><%= @product.PRIX_ACHAT_HT %></li>
+            <li><strong>PORT FR HT: </strong><%= @product.PORT_FR_HT %></li>
+            <li><strong>PORT DE HT: </strong><%= @product.PORT_DE_HT %></li>
+            <li><strong>PORT ES HT: </strong><%= @product.PORT_ES_HT %></li>
+            <li><strong>PORT IT HT: </strong><%= @product.PORT_IT_HT %></li>
+            <li><strong>DELAI EXPEDITION: </strong><%= @product.DELAI_EXPEDITION %></li>
+            <li><strong>STOCK: </strong><%= @product.STOCK %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Side Widget Well -->
+    <div class="well">
+      <h4>Caractéristiques</h4>
+      <div class="row">
+        <div class="col-lg-6">
+          <ul class="list-unstyled">
+            <li><strong>POIDS: </strong><%= @product.POIDS %></li>
+            <li><strong>LARGEUR: </strong><%= @product.LARGEUR %></li>
+            <li><strong>PROFONDEUR: </strong><%= @product.PROFONDEUR %></li>
+            <li><strong>HAUTEUR: </strong><%= @product.HAUTEUR %></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

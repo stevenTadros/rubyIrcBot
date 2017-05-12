@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  EAN: 
+  MARQUE: MyText
+  REF_FABRICANT: MyText
+  CATEGORIES: MyText
+  NOM_PRODUIT: MyText
+
+two:
+  EAN: 
+  MARQUE: MyText
+  REF_FABRICANT: MyText
+  CATEGORIES: MyText
+  NOM_PRODUIT: MyText
